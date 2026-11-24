@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>__TITLE__ — Creative Drop</title>
+  <style>
+    :root { color-scheme: dark; --bg: #0d0f14; --fg: #f5f1e8; --muted: #9aa3b2; --accent: #e8b96a; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.5 system-ui, sans-serif; }
+    main { max-width: 880px; margin: 0 auto; padding: clamp(20px, 5vw, 56px) 20px 72px; }
+    .eyebrow { color: var(--accent); text-transform: uppercase; letter-spacing: .18em; font-size: 12px; }
+    h1 { font-size: clamp(30px, 6vw, 52px); line-height: 1.05; margin: 12px 0 8px; }
+    .tagline { color: var(--muted); font-size: clamp(16px, 2.5vw, 20px); margin: 0 0 28px; }
+    figure { margin: 0 0 24px; }
+    img, video { display: block; width: 100%; border-radius: 14px; background: #171a22; }
+    audio { width: 100%; margin-top: 14px; }
+    .label { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .12em; margin-bottom: 8px; }
+    .media + .media { margin-top: 32px; }
+    footer { border-top: 1px solid #262b36; margin-top: 40px; padding-top: 18px; color: var(--muted); font-size: 13px; }
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="eyebrow">Creative Drop</div>
+    <h1>__TITLE__</h1>
+    <p class="tagline">__TAGLINE__</p>
+
+    <figure class="media">
+      <div class="label">Key visual</div>
+      <img src="__HERO_SRC__" alt="Hero image for __TITLE__">
+    </figure>
+
+    __AUDIO_BLOCK__
+
+    __VIDEO_BLOCK__
+
+    <footer>
+      Made with <a href="https://pollinations.ai" rel="noopener">Pollinations</a> models.
+      __MODEL_LINE__
+    </footer>
+  </main>
+</body>
+</html>
